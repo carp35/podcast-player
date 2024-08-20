@@ -1,42 +1,39 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Importa los estilos de slick-carousel desde el directorio node_modules */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 70px; /* Ajusta según la altura del header */
+  background-color: #121212; /* Ajusta el color de fondo según tu diseño */
+  width: 100vw; /* Ocupar todo el ancho */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto; /* Permite desplazamiento vertical si el contenido es grande */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header, .playback-bar {
+  background-color: #202020; /* Color de fondo oscuro */
+  color: white; /* Color de texto blanco */
+  padding: 10px; /* Espaciado interno */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.playback-bar {
+  position: fixed; /* Fija la barra en la parte inferior */
+  bottom: 0;
+  width: 100%; /* Ancho completo */
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.main-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los componentes hijos horizontalmente */
+  width: 100%; /* Asegura que el contenido no se salga del contenedor */
+  box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
 }

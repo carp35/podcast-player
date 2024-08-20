@@ -1,0 +1,38 @@
+.quick-picks {
+    padding: 20px;
+    background-color: #121212;
+    color: white;
+    margin: 30px auto 95px; /* Simplificado */
+    width: 100%;
+    max-width: 1500px;
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    transition: padding 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    .quick-picks-list {
+      grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas medianas */
+    }
+  
+    .album-image {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .song-title {
+      font-size: 12px;
+    }
+  
+    .artist-name {
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .play-all {
+      margin-top: 0; /* Ajusta el margen en pantallas más pequeñas */
+    }
+}
+

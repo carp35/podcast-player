@@ -1,0 +1,45 @@
+.recommended-albums {
+    margin-top: 20px; /* Ajusta según sea necesario */
+    margin-bottom: 40px; /* Ajusta según sea necesario */
+}
+
+.album-image {
+    transition: transform 0.3s ease; /* Transición para el cambio de tamaño o escala */
+  }
+  
+  .album-card:hover .album-image {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+}
+
+@media (max-width: 1024px) {
+    .album-card {
+        width: calc(25% - 10px); /* Tres tarjetas por fila */
+    }
+
+    .album-image {
+        width: 75%; /* Imagen ajustada */
+    }
+}
+
+@media (max-width: 768px) {
+    .album-card {
+        width: calc(33.33% - 10px); /* Dos tarjetas por fila */
+    }
+
+    .album-image {
+        width: 100%; /* Imagen completa */
+    }
+}
+
+@media (max-width: 480px) {
+    .album-card {
+        width: calc(50% - 10px); /* Una tarjeta por fila */
+    }
+
+    .album-image {
+        width: 100%; /* Imagen completa */
+    }
+}
+
+
+  

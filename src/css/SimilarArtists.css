@@ -1,0 +1,145 @@
+/* Estilo general de la sección Similar Artists */
+.similar-artists {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 1200px; /* Ajusta el ancho máximo para centrado */
+    background-color: #121212; /* Color de fondo de la sección */
+    color: white;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+    position: relative; /* Para posicionar los controles del carrusel */
+    padding: 20px; /* Añadido padding para mejorar el diseño */
+    margin-left: auto; /* Centra la sección horizontalmente */
+    margin-right: auto; /* Centra la sección horizontalmente */
+    transition: padding 0.3s ease; /* Transición para el cambio de padding */
+}
+
+/* Controles del carrusel */
+.carousel-controls {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde el borde superior */
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+    display: flex;
+    gap: 10px;
+}
+
+/* Botones del carrusel */
+.carousel-button {
+    background-color: #202020;
+    border: none;
+    color: white;
+    font-size: 10px; /* Tamaño del texto del botón */
+    width: 30px; /* Tamaño del botón */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%; /* Asegura que los botones sean redondos */
+    transition: background-color 0.3s ease; /* Transición para el cambio de color de fondo */
+}
+
+.carousel-button:hover {
+    background-color: #333333; /* Color de fondo al pasar el ratón por encima */
+}
+
+/* Información del usuario */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaciado entre la imagen y los detalles del usuario */
+    margin-bottom: 20px; /* Espaciado entre la información del usuario y las listas de artistas */
+}
+
+/* Imagen del usuario */
+.user-image {
+    width: 50px; /* Tamaño reducido de la imagen del usuario */
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: width 0.3s ease, height 0.3s ease; /* Transición para el cambio de tamaño */
+}
+
+/* Título de la sección */
+.section-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    transition: font-size 0.3s ease; /* Transición para el cambio de tamaño del texto */
+}
+
+/* Lista de artistas */
+.artists-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre las tarjetas de artistas */
+    justify-content: center; /* Centra las tarjetas en la línea */
+}
+
+/* Tarjeta de artista */
+.artist-card {
+    width: calc(25% - 20px); /* Cuatro tarjetas en fila con espacio entre ellas */
+    box-sizing: border-box;
+    text-align: center;
+    transition: width 0.3s ease; /* Transición para el cambio de tamaño */
+}
+
+/* Imagen del artista */
+.artist-image {
+    width: 100px; /* Tamaño reducido de la imagen del artista */
+    height: 100px;
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: width 0.3s ease, height 0.3s ease; /* Transición para el cambio de tamaño */
+}
+
+/* Nombre del artista */
+.artist-name {
+    font-size: 14px;
+    color: #dddddd; /* Color de texto para el nombre del artista */
+    transition: font-size 0.3s ease; /* Transición para el cambio de tamaño del texto */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1024px) {
+    .artist-card {
+        width: calc(33.33% - 20px); /* Tres tarjetas en fila en pantallas medianas */
+    }
+
+    .artist-image {
+        width: 80px; /* Tamaño reducido de la imagen del artista */
+        height: 80px;
+    }
+
+    .section-title {
+        font-size: 16px; /* Tamaño ajustado del título */
+    }
+}
+
+@media (max-width: 768px) {
+    .artist-card {
+        width: calc(50% - 20px); /* Dos tarjetas en fila en pantallas pequeñas */
+    }
+
+    .artist-image {
+        width: 70px; /* Tamaño reducido de la imagen del artista */
+        height: 70px;
+    }
+
+    .section-title {
+        font-size: 14px; /* Tamaño ajustado del título */
+    }
+}
+
+@media (max-width: 480px) {
+    .artist-card {
+        width: 100%; /* Una tarjeta en fila en pantallas muy pequeñas */
+    }
+
+    .artist-image {
+        width: 60px; /* Tamaño reducido de la imagen del artista */
+        height: 60px;
+    }
+
+    .section-title {
+        font-size: 12px; /* Tamaño ajustado del título */
+    }
+}

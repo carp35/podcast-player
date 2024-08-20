@@ -1,0 +1,26 @@
+.carousel-button {
+    margin: 0 5px; /* Espaciado adicional alrededor de los botones */
+}
+
+.carousel-button:hover {
+    background-color: #444; /* Color ligeramente más oscuro */
+}
+
+@media (max-width: 480px) {
+   .user-image {
+      width: 25px; /* Tamaño reducido pero aún visible */
+      height: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-button {
+      width: 25px; /* Tamaño más pequeño en pantallas medianas */
+      height: 25px;
+      font-size: 8px; /* Tamaño del texto ajustado */
+    }
+}
+
+
+
+  
